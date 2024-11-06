@@ -1,0 +1,110 @@
+/* Resetting margins and paddings for all elements */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body{
+  width: 100vw;
+  background-color: #d0d0d0;
+  overflow-x: hidden;
+}
+
+
+nav {
+  width: 100vw;
+  height: 12vh;
+  background-image: linear-gradient( #100077, #3533cd);
+  display: flex;
+  align-items: center;
+  padding: 0 15px;
+  box-shadow: 2px 2px 2px rgb(144, 144, 144);
+}
+
+.nav_button{
+  height: 55%;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  color: white;
+  font-weight: bold;
+  position: relative;
+}
+
+.dropdown-menu {
+  position: absolute;
+  top: 100%;  /* Position below the profile button */
+  right: 0;   /* Align dropdown to the right */
+}
+
+#logo {
+  width: 200px; 
+  height: 83.33%;
+  margin-left: 2px;
+  box-shadow: 1px 1px 5px #000000, -1px -1px 5px #000000;
+  border-radius: 10px;
+}
+
+#logo_image {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+}
+
+/* Responsive adjustments if needed */
+@media screen and (max-width: 768px) {
+  nav {
+    height: 10vh; /* Adjust height for smaller screens */
+  }
+  
+  #logo {
+    width: 150px; /* Adjust logo size for smaller screens */
+  }
+}
+
+#search_box{
+  width: 30%;
+  height: 55%;
+  border: none;
+  outline: none;
+  margin-left: 5%;
+  border: 1px solid black;
+  border-radius: 5px 0px 0px 5px;
+  font-size: 1.5vw;
+  padding-left: 1%;
+}
+#search_icon{
+  width: 4%;
+  border: 1px solid black;
+  border-radius: 0px 5px 5px 0px;
+}
+#search_icon>img,#profile_icon>img,#cart_icon>img{
+  width: 70%;
+  height: 70%;
+  padding: 5%;
+}
+#profile_icon,#cart_icon{
+  width: 4%;
+  border-radius: 70%;
+  background-color: transparent;
+}
+#profile_icon{
+  margin-left: 15%;
+  /* border: 5px solid black; */
+}
+#cart_icon{
+  margin-left: 20%;
+}
+
+#footer{
+  height: 4vh;
+  width: 100%;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  text-align: center;
+  background-color: #000000;
+  color: white;
+
+}
