@@ -1,5 +1,5 @@
 /* Resetting margins and paddings for all elements */
-* {
+*{
   padding: 0;
   margin: 0;
   box-sizing: border-box;
@@ -11,15 +11,15 @@ body{
   overflow-x: hidden;
 }
 
-
 nav {
   width: 100vw;
   height: 12vh;
-  background-image: linear-gradient( #100077, #3533cd);
+  background-color: teal;
+  /* background-image: linear-gradient( #100077, #3533cd); */
   display: flex;
   align-items: center;
   padding: 0 15px;
-  box-shadow: 2px 2px 2px rgb(144, 144, 144);
+  box-shadow: 2px 2px 7px rgb(144, 144, 144);
 }
 
 .nav_button{
@@ -30,6 +30,7 @@ nav {
   color: white;
   font-weight: bold;
   position: relative;
+  
 }
 
 .dropdown-menu {
@@ -42,14 +43,15 @@ nav {
   width: 200px; 
   height: 83.33%;
   margin-left: 2px;
-  box-shadow: 1px 1px 5px #000000, -1px -1px 5px #000000;
-  border-radius: 10px;
+  /* box-shadow: 1px 1px 5px #000000, -1px -1px 5px #000000; */
+  /* border-radius: 10px; */
 }
 
 #logo_image {
   width: 100%;
   height: 100%;
-  border-radius: 10px;
+  border: none;
+  /* border-radius: 10px; */
 }
 
 /* Responsive adjustments if needed */
@@ -65,32 +67,48 @@ nav {
 
 #search_box{
   width: 30%;
-  height: 55%;
+  height: 50%;
   border: none;
   outline: none;
   margin-left: 5%;
-  border: 1px solid black;
-  border-radius: 5px 0px 0px 5px;
-  font-size: 1.5vw;
+  border: 1px solid rgb(123, 123, 123);
+  border-radius: 15px 0px 0px 15px;
+  font-size: 1vw;
+  font-weight: bold;
   padding-left: 1%;
+  box-shadow: 1px 1px 3px black;
+  color: teal;
+  letter-spacing: 0.5vh;
+}
+#search_box::placeholder{
+  color: teal;
+  letter-spacing: 0.5vh;
+  font-weight: bold;
+  font-size: 1vw;
 }
 #search_icon{
   width: 4%;
-  border: 1px solid black;
-  border-radius: 0px 5px 5px 0px;
+  height: 50%;
+  color: teal;
+  border: 1px solid rgb(123, 123, 123);
+  border-radius: 0px 15px 15px 0px;
+  box-shadow: 1px 1px 3px black;
 }
 #search_icon>img,#profile_icon>img,#cart_icon>img{
-  width: 70%;
+  width: 60%;
   height: 70%;
   padding: 5%;
+  margin-right: 15%;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3), -2px -2px 4px rgba(0, 0, 0, 0.2);
 }
 #profile_icon,#cart_icon{
-  width: 4%;
+  width: 5%;
   border-radius: 70%;
+  display: flex;
   background-color: transparent;
 }
 #profile_icon{
-  margin-left: 15%;
+  margin-left: 10%;
   /* border: 5px solid black; */
 }
 #cart_icon{
@@ -107,4 +125,11 @@ nav {
   background-color: #000000;
   color: white;
 
+}
+#profile_icon>p,#cart_icon>p{
+  width: 40%;
+  height: 75%;
+  text-align: center;
+  align-content: center;
+  letter-spacing: 0.2vh;
 }
